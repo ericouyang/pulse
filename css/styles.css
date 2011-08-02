@@ -1,0 +1,113 @@
+﻿/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+#menu{
+		position: absolute;
+		right: 40px;
+		top: 10px;
+}
+
+.day-date {
+	width: 14%;
+	float: left;
+	padding: 12px 12px 20px 0;
+}
+
+.day-of-week {
+	font-size: 20px;
+	height: 20px;
+	margin-bottom: 4px;
+}
+
+.month-day {
+	font-size: 18px;
+}
+.day-date .mobile-date{
+	display: none;
+}
+.day-date div {
+	width: 100px;
+	text-align: right;
+}
+.post, #more, .no-more{
+	width: 84%;
+	float: right;
+}
+
+@media (max-width: 1080px) {
+	.post, #more, .no-more {
+		width: 78%
+	}
+	
+	.day-date {
+		width: 18%;
+	}
+}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+#logo {margin: 0 auto;}
+
+
+#menu {
+	display: none;
+}
+.post, #more, .no-more{
+	float:left;
+	width: 100%
+}	
+
+.post .content {
+	font-size: 14px;
+}
+
+.day-date .day-of-week, .day-date .month-day {
+	display: none;
+}
+
+.day-date .mobile-date {
+	display: inline;
+	float: left;
+	width: 200px;
+	text-align: left;
+}
+.day-date {
+	height: 22px;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 0 0 10px 0;
+	float: left;
+	width: 200px;
+}
+
+.post-bottom .twitter-follow-button{
+	display: none;
+	
+}
+
+.sidebar a.rounded {
+	width: 100%;
+}
+
+.footer p {
+	padding: 0 10%;
+	text-align: center;
+}
+}
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

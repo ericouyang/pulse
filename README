@@ -1,0 +1,48 @@
+Project Pulse README
+Release 0.1
+
+By: Eric Ouyang (http://ericouyang.com)
+
+**************
+Overview
+**************
+Project Pulse is aimed to provide a framework for design a community website where it's a constant stream
+of user generated content. Currently, the sources include Twitter and Tumblr.
+
+Tumblr is used for the "Contribute to Pulse" feature since it's easy to use and allows for contributions
+without actually having an account.
+
+All feeds are grabbed by rss and parsed using the PHP library SimplePie
+
+**************
+Setting Up
+**************
+You can quickly set up your own pulse for your school, religious community, club, and more.
+
+Although you can use it to just aggregate Twitter accounts, we'd recommend using the Tumblr aspect as well.
+
+Sign up for a Tumblr account at http://www.tumblr.com
+
+Go to your newly created Tumblr website and copy the url.
+
+Configure your installation by going to includes/config.php. Type in the desired twitter users to aggregate
+and set your tumblr url where noted.
+
+Make sure the cache directory has read write permissions by the server. If not, change the folder permissions to 755 
+
+Customize your installation with the CSS files in /css and with the templates in /templates
+
+Go to your site and try out your brand new pulse!
+
+**************
+Notes
+**************
+This is very early software. So things may break. I'm not responsible for any problems that may occur.
+
+This was originally developed for Phillips Academy's student newspaper by Eric Ouyang '13
+
+If you need help, send me a message http://ericouyang.com/contact.php
+
+The base CSS utilizes the excellent 1140 Grid System. http://cssgrid.net/
+
+ENJOY!

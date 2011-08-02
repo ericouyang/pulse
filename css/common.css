@@ -1,0 +1,319 @@
+﻿/* Common CSS for Phillipian Pulse */
+/* Designed by Eric Ouyang '13 */
+
+body {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 0;
+	background: #002054;
+	color: #fff;
+}
+.container {
+	margin-top: 20px;
+}
+
+.leftcol {
+	float: left;
+}
+
+#logo {
+	height: 45px;
+	width: 300px;
+}
+#logo h1 {
+	text-indent: -9999em;
+	background: url('../img/logo.png') no-repeat;
+	height: 45px;
+	margin: 0;
+}
+
+.rounded {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	border-radius: 8px;
+}
+b, strong {
+	font-weight: 600;
+}
+
+strike {
+	text-decoration: line-through;
+}
+
+#menu a {
+	color: #fff;
+}
+
+.info {
+	float: left;
+	margin: 20px 0;
+	font-size: 16px;
+}
+
+.info p {
+	margin-bottom: 10px;
+}
+.info a{
+	color: #fff;
+}
+.day {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.posts {
+	margin-top: 14px;
+	width: 100%;
+}
+.post {
+	background: #fff;
+	margin-bottom: 20px;
+	color: #002054;
+}
+
+.post-top {
+	background: #B0D9FF;
+	height: 28px;
+	font-size: 16px;
+	line-height: 28px;
+	padding-left: 10px;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	-khtml-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+
+}
+
+.post-top .time {
+	font-weight: 600;
+}
+.post .content {
+	margin: 10px 20px 0 20px;
+}
+
+.post.standard .content p{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.post.standard .content {
+	margin-bottom: 20px;
+}
+.post h3{
+	font-weight: 600;
+	color: inherit;
+}
+
+.post-bottom {
+	float: left;
+	width: 100%;
+	padding-bottom: 10px;
+}
+.post-bottom .twitter-follow-button{
+	float: right;
+	width: 280px;
+}
+.leftcol .page-title {
+	float: right;
+	font-size: 22px;
+	margin-bottom: 12px;
+}
+
+.leftcol .page-title a {
+	color: #fff;
+	font-size: 14px;
+	margin-left: 8px;
+}
+.post a.filter{
+	font-size: 12px;
+	float: right;
+	margin-right: 10px;
+	color: #000;
+}
+.sidebar {
+	float: right;
+}
+.sidebar a.rounded {
+	background: #B0D9FF;
+	font-size: 16px;
+	width: 60%;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	float: left;
+	margin-right: 40%;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.profile-image {
+	float:left;
+	width: 85px;
+}
+.post.twitter .content {
+	float: left;
+	font-size: 18px;
+}
+.post.twitter a {
+	color: #002054;
+}
+
+.post.twitter a:hover {
+	color: #06c;
+}
+
+.post.video p, .post.photo p {
+	font-size: 16px;
+}
+
+.about {
+	margin-top: 14px;
+}
+.about p {
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.twitter-sources {
+	margin-top: 40px;
+}
+.twitter-sources h4 {
+	margin-bottom: 15px;
+}
+.twitter-sources ul li {
+	list-style: none;
+}
+.twitter-sources a {
+	color: #fff;
+}
+p.bigger {
+	font-size: 20px;
+}
+
+.moreposts {
+	float: left;
+	width: 100%;
+}
+
+.no-more {
+	float: left;
+	font-size: 15px;
+	text-align: center;
+}
+
+#more{
+	background: #B0D9FF;
+	font-size: 18px;
+	float: right;
+	text-align:center;
+	padding: 6px 0;
+	color: #000;
+	text-decoration:none;
+}
+
+.footer p{
+	margin-top: 20px;
+	float: left;
+}
+
+.footer a{
+	color: #fff;
+}
+
+.post-comments {
+	margin: 10px 5% 0 5%;
+	width: 90%;
+	float: left;
+}
+
+.hide-comments {
+	display: none;
+}
+
+.content object, .content iframe {
+	width: 580px;
+	height: 354px;
+	margin-bottom: 10px;
+}
+
+.content object embed {
+	width: 100%;
+	height: 100%;
+}
+
+.post-bottom .comment-link, .post-bottom .hide-comments {
+	float: right;
+	margin-right: 20px;
+}
+
+.fb_iframe_widget {
+	width: 120px;
+	float: right;
+}
+#feed-select {
+	margin-top: 10px;
+	float: left;
+}
+
+#feed-select input {
+	margin-right: 8px;
+}
+
+#feed-select h4 {
+	margin-bottom: 10px;
+}
+#feed-select span {
+	padding-left: 8%;
+	font-size: 15px;
+	float: left;
+	width: 92%;
+	margin-bottom: 5px;
+}
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%; background: #333333;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+ #cboxClose{position:absolute; bottom:0; right:0;}
+/* Base Typography based on Blueprint CSS */
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#fff;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.5em;}
+a:focus, a:hover {text-decoration:underline;}
+a {color:#06c;text-decoration:none;}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong, dfn {font-weight:bold;}
+em, dfn {font-style:italic;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0;}
+ul, ol {margin:0 1.5em 1.5em 1.5em;padding-left:1.5em;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
