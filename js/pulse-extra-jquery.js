@@ -23,13 +23,13 @@ $(document).ready(function(){
 		return false;
 		});  
 	$("a.reset-filter").click(function(){	
-		$(".leftcol").fadeOut(200).load('templates/all.php').fadeIn(200);
+		$(".leftcol").fadeOut(200).load('templates/all.php', function() {$(".leftcol").fadeIn(200);});
 		$(".feed-checkbox").attr('checked','checked')
 		$("#feed-select").fadeIn(200);
 		return false;
 	});
 	$("a.filter").click(function(){	
-		$(".leftcol").fadeOut(200).load('templates/'+$(this).attr("href")).fadeIn(200);
+		$(".leftcol").fadeOut(200).load('templates/'+$(this).attr("href"), function() {$(".leftcol").fadeIn(200);});
 		$("#feed-select").fadeOut(200);
 		return false;
 	});

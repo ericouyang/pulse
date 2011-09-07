@@ -12,6 +12,9 @@ require_once('../includes/common.php');
 <div class="page-title">Custom Filter  
 	<a class="reset-filter" href="../index.php">(&laquo; view all)</a></div> 
 <div class="posts">
+		<?php if($empty): ?>
+			<p style="text-align: right; font-size: 16px;">You have nothing selected.</p>
+		<?php endif;?>
 		<?php for($i = 0; $i < $num; $i++): ?>
 			<?php include('post_template.php'); ?>
 		<?php endfor; ?>

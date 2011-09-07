@@ -65,6 +65,7 @@ strike {
 
 .posts {
 	margin-top: 14px;
+	float: left;
 	width: 100%;
 }
 .post {

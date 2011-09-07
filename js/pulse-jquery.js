@@ -5,7 +5,7 @@ $(document).ready(function(){
 $.ajaxSetup ({  
         cache: false  
 }); 
-$(".leftcol").hide().load('/templates/all.php').fadeIn(600);
+$(".leftcol").hide().load('/templates/all.php', function() {$(".leftcol").fadeIn(600);});
 $(".add-link").colorbox({width:"60%", height:"420px", scrolling:false, iframe:true});
 $(".feed-checkbox").change(function(){ 
         $.ajax({
