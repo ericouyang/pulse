@@ -4,11 +4,11 @@
 	<?php //print_r($item); ?>
 	<?php if($i == 0): ?>
 		<?php $current_day = date("F j, Y",strtotime($item->get_date())); ?>
-		<div class="day"><div class="day-date rounded"> <div class="mobile-date"><?php echo date("l, F j",strtotime($item->get_date()))?></div> <div class="day-of-week"><?php echo date("D",strtotime($item->get_date()))?></div><div class="month-day"><?php echo date("F j",strtotime($item->get_date()))?></div> </div>
+		<div class="day"><div class="day-date rounded"> <div class="mobile-date"><?php echo date("D, F j",strtotime($item->get_date()))?></div> <div class="day-of-week"><?php echo date("D",strtotime($item->get_date()))?></div><div class="month-day"><?php echo date("F j",strtotime($item->get_date()))?></div> </div>
 	<?php endif; ?>
 	<?php if(date("F j, Y",strtotime($item->get_date())) != $current_day): ?>
 		<?php $current_day = date("F j, Y",strtotime($item->get_date()));?>
-		</div><div class="day"> <div class="day-date rounded"> <div class="mobile-date"><?php echo date("l, F j",strtotime($item->get_date()))?></div> <div class="day-of-week"><?php echo date("D",strtotime($item->get_date()))?></div><div class="month-day"><?php echo date("F j",strtotime($item->get_date()))?></div> </div>
+		</div><div class="day"> <div class="day-date rounded"> <div class="mobile-date"><?php echo date("D, F j",strtotime($item->get_date()))?></div> <div class="day-of-week"><?php echo date("D",strtotime($item->get_date()))?></div><div class="month-day"><?php echo date("F j",strtotime($item->get_date()))?></div> </div>
 	<?php endif; ?>
 	<?php $account = getAccount($item->get_feed()->get_link()); //attempts to grab twitter account?>
 	<?php if(substr($item->get_link(), 0, 18) == "http://twitter.com"): ?>
