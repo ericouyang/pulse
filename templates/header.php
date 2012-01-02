@@ -20,7 +20,7 @@
 	start = <?php echo $num;?>;
 	additional = <?php echo $additional;?>;
 </script>
-
+<link rel="shortcut icon" href="/favicon.png">
 </head>
 
 <body>
